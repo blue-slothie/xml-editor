@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Easy XML-Editor</title>
+    <script type="text/javascript" src="js/lib/jxon/index.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-2.1.3.min.js"></script>
+    
+    <link rel="stylesheet" href="css/xml-editor.css">
+    <link rel="stylesheet" href="js/lib/jqTree/jqtree.css">
+    <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.min.css">
+    
+    <script src="js/lib/jqContextMenu/src/jquery.contextMenu.js" type="text/javascript"></script>
+    <link href="js/lib/jqContextMenu/src/jquery.contextMenu.css" rel="stylesheet" type="text/css"/>
+    
+    <script type="text/javascript" src="js/lib/jqTree/tree.jquery.js"></script>
+    <script type="text/javascript" src="js/lib/vkbeautify.js"></script>
+    <script type="text/javascript" src="js/xml-edit.js"></script>
+  </head>
+  
+  <body>
+    <div id="menu">
+      <a role="button" id="save-button" href="#">
+        <span aria-hidden="true" class="glyphicon glyphicon-save"></span> Save
+      </a>
+      <input type="file" id="save" role="button" nwsaveas style="display: none;"/>
+      <button role="button" class="print">
+        <span aria-hidden="true" class="glyphicon glyphicon-picture"></span> Print
+      </button>
+    </div>
+    
+    <div id="tabcontainer">
+      <div class="tab-buttons">
+        <div role="button" id="btn-tree" data-tab="xml-tree" class="selected">
+          <span>XML-Tree</span>
+        </div>
+        <div role="button" id="btn-text" data-tab="xml-text">
+          <span>XML-Editor</span>
+        </div>
+      </div>
+      <div id="tabs">
+        <div id="xml-tree" style="display: block;"></div>
+        <div id="xml-text" style="display: none;"></div>
+      </div>
+      <script type="text/javascript" src="js/lib/ace-builds-master/src-min-noconflict/ace.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        init();
+      });
+    </script>
+    </div>
+    
+    <div id="modal-editattribut" class="xml-modal" style="display: none;">
+      <h3 class="xml-modal-title">Edit attribute</h3>
+      <div class="xml-modal-body">
+        <div class="line">
+          <label class="pos-left">Name <input type="text" id="attr-name"></label>
+          <label class="pos-right">Value <input type="text" id="attr-value"></label>
+        </div>
+        <div class="line">
+          <button id="ch-attr-cancel" role="button" class="pos-left">Cancel</button>
+          <button id="ch-attr-ok" role="button" class="pos-right">O.K.</button>
+        </div>
+      </div>
+    </div>
+    <div id="print-section">
+      <canvas id="print-canvas" class="print-canvas"></canvas>
+      <canvas id="buf-canvas"></canvas>
+    </div>
+    <div id="imgview" style="display: none">
+      <button role="button" id="saveimg">
+        <span class="glyphicon glyphicon-download-alt"></span> Save
+      </button>
+      <input type="file" id="imgsave" role="button" nwsaveas style="display: none;"/>
+      <img id="image">
+    </div>
+  </body>
+
+</html>

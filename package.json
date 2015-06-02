@@ -1,0 +1,16 @@
+{
+  "name": "xml-editor",
+  "version": "1.0.0",
+  "description": "Easy and simple XML-Editor",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window" : {
+    "width": 800,
+    "height": 900,
+    "toolbar": false
+  },
+  "author": "Florian Hoyer",
+  "license": "GPL"
+}

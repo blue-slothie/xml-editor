@@ -1,0 +1,290 @@
+#menu, #tabcontainer, #tab-buttons, #xml-tree {
+  font-family: sans-serif;
+  font-size: 13.5pt;
+}
+
+#menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 1;
+  padding: 5px;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+}
+
+#menu * {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#menu input, #menu a, #menu button, #saveimg{
+  border: 1px solid rgba(200, 200, 200, 0.85);
+  padding: 4px;
+  border-radius: 8px;
+  background: white;
+}
+
+#menu *[role="button"]:hover,
+.tab-buttons > div:hover,
+#saveimg:hover {
+  background: rgba(225, 225, 225, 1);
+}
+
+.tab-buttons > .selected:hover {
+  background: dodgerblue;
+}
+
+#menu > .print {
+  float: right;
+  margin-right: 5px;
+}
+
+#menu > .save {
+  float: left;
+  margin-right: 20px;
+}
+
+a#save-button {
+  text-decoration: none;
+}
+
+a#save-button:link {
+  color: rgba(20, 145, 245, 1);
+}
+
+a#save-button:visited {
+  color: rgba(20, 145, 245, 1);
+}
+
+#menu a#save-button:hover {
+  color: rgba(20, 145, 245, 1);
+}
+
+a#save-button:active {
+  color: rgba(20, 145, 245, 1);
+}
+
+#xml-file {
+  display: none;
+}
+
+#tabcontainer {
+  position: absolute;
+  top: 60px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  /*overflow-y: auto;*/
+}
+
+.tab-buttons {
+  display: inline-block;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-top: 1px solid grey;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-image: none;
+  border-color: rgba(200, 200, 200, 0.8);
+  left: auto;
+  right: auto;
+}
+
+.tab-buttons > div {
+  display: inline-block;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border: 1px solid grey;
+  border-bottom: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.tab-buttons > div > span {
+  padding: 15px;
+  height: 30px;
+}
+
+.tab-buttons > div.selected {
+  background-color: dodgerblue;
+  color: white;
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#tabs {
+  height: 95%;
+}
+
+#xml-tree {
+  border: 1px solid grey;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: auto;
+  padding: 5px;
+  height: 100%;
+}
+
+.attributes-list {
+  opacity: 0.94;
+  margin-left: 20px;
+}
+
+.attribute {
+  border: 1px solid rgba(170, 170, 170, 0.7);
+  background: rgba(5, 200, 7, 1);
+  color: white;
+  border-radius: 8px;
+  font-size: 12pt;
+  margin-right: 12px;
+}
+
+.attribute-name, .attribute-value {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.attribute-name {
+  border-right: 1px solid white;
+}
+
+#xml-text {
+  border: 1px solid grey;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  max-width: 100%;
+  overflow: auto;
+  padding: 5px;
+}
+
+/*#xml-tree .edit-button {
+  margin-left: 10px;
+  margin-right: 10px;
+}*/
+
+div.jqtree-element:hover {
+  background: rgba(220, 220, 230, 1);
+  border: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+}
+
+span.jqtree-title.editing > span {
+  display: none;
+}
+
+span.jqtree-title.noedit > span {
+  display: inline;
+}
+
+span.jqtree-title.editing > input {
+  display: inline;
+}
+
+span.jqtree-title.noedit > input {
+  display: none;
+}
+
+.text-value, .attribute-value {
+  font-style: italic;
+  font-family: serif;
+}
+
+.pos-left {
+  float: left;
+}
+
+.pos-right {
+  float: right;
+}
+
+.xml-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(50, 50, 90, 0.68);
+  z-index: 1;
+}
+
+.xml-modal {
+  width: 750px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-left: -375px;
+  background: white;
+  border: 1px solid rgba(200, 200, 200, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.xml-title {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.8);
+  text-align: center;
+  align-self: center;
+}
+
+.line {
+  display: block;
+  clear: both;
+}
+
+.line * {
+  display: inline-block;
+  margin: 5px;
+}
+
+label {
+  border: 1px solid rgba(200, 200, 200, 0.8);
+  border-radius: 8px;
+}
+
+#print-section {
+  width: 1px;
+  height: 0px;
+  overflow: hidden;
+  display: block;
+}
+
+canvas#print-canvas {
+  display: block;
+}
+
+#imgview {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  top: 3px;
+  left: 3px;
+  bottom: 3px;
+  right: 3px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  background: white;
+  z-index: 3;
+  -webkit-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+}
+
+#saveimg {
+  display: inline-block;
+  z-index: 4;
+  float: right;
+  border: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
+}
