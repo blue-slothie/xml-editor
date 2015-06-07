@@ -34,4 +34,5 @@ Want a single executable? Read the NW.js Github page for packaging desktop appli
 ##Bugs
 * Very slow when you try to load big XML-Files
 * Big XML-Files can't be rendered to PNG since the size limitations of canvas
+* Tags automatically set to lower case
 * Found one? Tell me :-)
