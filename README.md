@@ -23,13 +23,13 @@ If you like to use it as a desktop application download nodewebkit and start:
 Want a single executable? Read the NW.js Github page for packaging desktop applications.
 
 ##Ingredients:
-* Ace Editor
-* Twitter Bootstrap (for Glyphicons)
-* jqContextMenu
-* jqTree
-* JXON
-* vkbeautify
-* jQuery
+* [Ace Editor](http://ace.c9.io)
+* [Twitter Bootstrap](http://getbootstrap.com/) (for [Glyphicons](http://glyphicons.com/))
+* [jqContextMenu](https://github.com/medialize/jQuery-contextMenu)
+* [jqTree](http://mbraak.github.io/jqTree/)
+* [JXON](https://github.com/tyrasd/jxon)
+* [vkbeautify](http://www.eslinstructor.net/vkbeautify/)
+* [jQuery](https://jquery.com/)
 
 ##Bugs
 * Very slow when you try to load big XML-Files
